@@ -11,3 +11,7 @@
  * License:         GPL v2 or later
  * License URI:     https://www.gnu.org/licenses/gpl-2.0.html
  */
+function cookie_banner() {
+    echo 'This is the cookie banner';
+}
+add_action('wp_footer', 'cookie_banner');
