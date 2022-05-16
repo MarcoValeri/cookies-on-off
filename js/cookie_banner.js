@@ -1,1 +1,1 @@
-console.log(`Hello JavaScript`);
+console.log(`Test 2`);
