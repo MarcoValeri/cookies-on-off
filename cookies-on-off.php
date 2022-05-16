@@ -11,6 +11,14 @@
  * License:         GPL v2 or later
  * License URI:     https://www.gnu.org/licenses/gpl-2.0.html
  */
+
+ // Add js file
+function cookie_banner_js() {
+    wp_enqueue_script('cookie_banner', plugins_url('js/cookie_banner.js', __FILE__));
+}
+add_action('wp_enqueue_scripts', 'cookie_banner_js');
+
+// Add function that print out markup into the footer
 function cookie_banner() {
     echo 'This is the cookie banner';
 }
